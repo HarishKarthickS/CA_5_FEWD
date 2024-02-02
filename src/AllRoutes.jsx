@@ -1,16 +1,15 @@
 import React from "react";
 import {Route, Routes} from "react-router-dom"
-import Form from "./Components/Registration-form";
-// import About from "./Component/About";
+import RegistrationForm from "./Components/Registration-form";
 import Home from "./Components/Home";
 
 const AllRoutes=()=>{
     return (
         <>
         <Routes>
+            {/* Defining route path for home and the registration form*/}
             <Route path="/" element={<Home />}></Route>
-             <Route path="/form" element={<Form />}></Route>
-            {/*<Route path="/about" element={<About />}></Route> */}
+            <Route path="/form" element={<RegistrationForm />}></Route>
         </Routes>
 
         </>
