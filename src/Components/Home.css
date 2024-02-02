@@ -87,7 +87,7 @@
     align-items: center;
     flex-direction: column;
     width: 26vw;
-    height: 66vh;
+    height: 69vh;
     border-radius: 15px;
   }
   .Books-container:hover{
@@ -151,8 +151,6 @@ footer{
   color: rgb(123, 255, 0);
 }
 #free{
-
-  border: 1px solid #2bff00;
   color: #2bff00;
   margin-left: 10%;
 }
@@ -167,7 +165,7 @@ button{
 #button{
   margin-top: 4%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 15vw;
 }
