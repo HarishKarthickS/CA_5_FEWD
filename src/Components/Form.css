@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body {
+  background: rgb(152, 150, 150);
+  display: flex;
+  min-height: 100vh;
+
+}
+
+.form-container {
+  margin-top: 4%;
+  display: flex;
+  width: 360px;
+  background-color: rgb(228, 228, 228);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  padding: 10px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.success-message {
+  font-family: "Roboto", sans-serif;
+  background-color: #3f89f8;
+  padding: 15px;
+  color: white;
+}
+
+.form-field {
+  margin: 10px 0 10px 0;
+  padding: 15px;
+  font-size: 16px;
+  width: 310px;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+span {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: red;
+  margin-bottom: 15px;
+}
+
+input {
+  background: #f2f2f2;
+  border: 1px solid #000;
+}
+
+.error {
+  border-style: solid;
+  border: 2px solid #ffa4a4;
+}
+
+#Reg {
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+ margin-left: 4%;
+}
+
+#Reg:disabled {
+  cursor: default;
+}
+
+  #logo-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 21vw;
+    font-family: 'Diphylleia', serif;
+    font-size: 21px;
+  }
+  #body{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #termsAndCondition{
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+  }
+ label{
+    margin: 0%;
+    font-size: 15px;
+  }
+  #termsAndCondition input{
+    width: 21%;
+    height: 93%;
+  }
