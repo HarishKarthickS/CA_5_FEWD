@@ -92,9 +92,9 @@ export default function Form() {
             <span>{errors.termsAndCondition?.message}</span>
 
             {/* Button for the registration */}
-            <button id="Reg" className="form-field" type="submit">
-              <Link to='/books'>Register</Link>
-            </button>
+            <Link to='/books'><button id="Reg" className="form-field" type="submit">
+              Register
+            </button></Link>
           </form>
         </div>
       </div>
