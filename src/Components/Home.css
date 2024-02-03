@@ -129,6 +129,8 @@
   #button-reg:hover{
     background-color: #00ef73;
     color: #ffffff;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   @-webkit-keyframes rainbow {
     0%{background-position:0% 82%}

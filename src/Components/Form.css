@@ -57,14 +57,20 @@ input {
 }
 
 #Reg {
-  background: #4caf50;
-  color: white;
+  color: #00ff08;
+  background-color: #000000;
   cursor: pointer;
  margin-left: 4%;
+ font-size: 24px;
 }
 
 #Reg:disabled {
   cursor: default;
+}
+#Reg:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #00ff08;
+  color: #fff;
 }
 
   #logo-div{
