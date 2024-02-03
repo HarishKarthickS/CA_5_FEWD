@@ -16,9 +16,6 @@ export default function Form() {
   const onSubmit = (data)=>{
     setField(data)
     setSubmit(true)
-    setTimeout(() => {
-        window.location.href = "/books";
-      }, 100);
   }
 
   console.log(errors.email)
@@ -96,7 +93,7 @@ export default function Form() {
 
             {/* Button for the registration */}
             <button id="Reg" className="form-field" type="submit">
-              Register
+              <Link to='/books'>Register</Link>
             </button>
           </form>
         </div>
