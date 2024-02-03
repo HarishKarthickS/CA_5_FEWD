@@ -17,7 +17,7 @@ export default function Form() {
     setField(data)
     setSubmit(true)
     setTimeout(() => {
-        window.location.href = "/";
+        window.location.href = "/books";
       }, 100);
   }
 
@@ -35,7 +35,6 @@ export default function Form() {
 
       {/*Declaring body for the website which contains regiatration form*/}
       <div id="body">
-
         {/* Declaring the div which conatins the registration form */}
         <div className="form-container">
 
