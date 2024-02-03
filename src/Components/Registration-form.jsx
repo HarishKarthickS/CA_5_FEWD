@@ -31,7 +31,7 @@ export default function Form() {
       </div>
 
       {/*Declaring body for the website which contains regiatration form*/}
-      <div id="body">
+      <div id="bodys">
         {/* Declaring the div which conatins the registration form */}
         <div className="form-container">
 
@@ -105,6 +105,9 @@ export default function Form() {
           </form>
         </div>
       </div>
+      <footer>
+      ©️2024 Copyright Kalvium Books  
+    </footer>
     </>
   );
 }
