@@ -47,7 +47,7 @@ export default function Form() {
             className="form-field"
             type="text"
             placeholder="name"
-            {...register('name',{required:"Name is required!",maxLength:{value:30, message:"Name cannot be more than 20 characters"}})}/>
+            {...register('name',{required:"Name is required!",minLength:{value:3,message:"Name cannot be less than 3 characters"},maxLength:{value:30, message:"Name cannot be more than 30 characters"}})}/>
             <span>{errors.name?.message}</span>
 
             {/* Input for the email and span to show the errors */}
@@ -66,8 +66,15 @@ export default function Form() {
             type="password"
             placeholder="Password"
             {...register('password',{required:"Password is required!", 
-            minLength:{value:4,message:"Password must be more than 4 characters"},
-            maxLength:{value:20, message:"Password cannot be more than 20 characters"}})}/>
+            minLength:{value:10,message:"The password should be at least 10 characters long"},
+            validate: (value) => {
+              return (
+                [/[a-z]/, /[A-Z]/, /[0-9]/, /[^a-zA-Z0-9]/].every((pattern) =>
+                  pattern.test(value)
+                ) || "must include lower, upper, number, and special chars"
+              );
+            },
+           })}/>
             <span>{errors.password?.message}</span>
 
             {/* Input for the Confirm password and span to show the errors */}
@@ -93,7 +100,7 @@ export default function Form() {
 
             {/* Button for the registration */}
             <Link to='/books'><button id="Reg" className="form-field" type="submit">
-              Register
+              Sign Up
             </button></Link>
           </form>
         </div>
